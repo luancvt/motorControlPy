@@ -10,6 +10,7 @@ board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 
 # Define the PWM pin (for example, pin 9)
 pwm_pin = board.get_pin('d:6:0')  # 'd' for digital, '9' for pin number, 'p' for PWM
+board.digital[pwm_pin].mode = 1
 
 # pwm_value = 0.5  # 50% duty cycle (0.0 to 1.0)
 # pwm_pin.write(pwm_value)  # Write PWM value to the pin
