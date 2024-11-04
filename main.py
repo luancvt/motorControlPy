@@ -1,4 +1,7 @@
 import time
+import sys
+sys.path.append('/home/username/.local/lib/python3.10/site-packages')
+
 from pyfirmata import Arduino, util
 
 # Set up the connection to the Arduino board
