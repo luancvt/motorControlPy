@@ -25,7 +25,7 @@ while True:
         # dt = i/255
         # print("DT: ", dt)
         pwm_pin.write(0.5)
-        # print("Iteration: ", i)
+        print("Iteration: ", i)
         time.sleep(0.5)  # small delay
         pwm_pin.write(0.9)
         time.sleep(0.5)
