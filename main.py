@@ -25,3 +25,5 @@ while True:
         pwm_pin.write(i)
         time.sleep(1)  # small delay
 
+    pwm_pin.write(0)
+    time.sleep(1)
