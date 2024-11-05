@@ -23,5 +23,5 @@ while True:
 
     for i in range(0, 256):  # i ranges from 0 to 100
         pwm_pin.write(i)
-        time.sleep(0.3)  # small delay
+        time.sleep(1)  # small delay
 
