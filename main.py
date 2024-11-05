@@ -13,6 +13,7 @@ board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 # Define the digital pin 3 as pwm
 pwm_pin = board.get_pin('d:3:p') 
 
+a: float = 0.4 
 
 while True:
     # # Simple blinking code
@@ -21,7 +22,7 @@ while True:
     # led_pin.write(False) 
     # time.sleep(0.1)
 
-    pwm_pin.write(0)
+    pwm_pin.write(a)
 
     # for i in range(0, 256):  # i ranges from 0 to 100
         # # dt = i/255
