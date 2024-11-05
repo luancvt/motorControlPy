@@ -8,8 +8,8 @@ from pyfirmata import Arduino, util
 board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 
 # Define the pin for 0
-led_pin = board.get_pin('d:6:0') 
-board.digital[6].mode = 1
+led_pin = board.get_pin('d:6:o') 
+# board.digital[6].mode = 1
 # pwm = board.get_pin('d:6:p') 
 # board.digital[6].mode = 3
 
