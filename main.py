@@ -10,8 +10,8 @@ board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 # Define the digital pin 6 as output
 # led_pin = board.get_pin('d:6:o')
 
-# Define the digital pin 6 as pwm
-pwm_pin = board.get_pin('d:6:p') 
+# Define the digital pin 3 as pwm
+pwm_pin = board.get_pin('d:3:p') 
 
 
 while True:
