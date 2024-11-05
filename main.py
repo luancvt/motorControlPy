@@ -22,7 +22,7 @@ while True:
     # time.sleep(0.1)
 
     for i in range(0, 256):  # i ranges from 0 to 100
-        dt = i//255
+        dt = i/255
         print("DT: ", dt)
         pwm_pin.write(i)
         print("Iteration: ", i)
