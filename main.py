@@ -24,6 +24,6 @@ while True:
     for i in range(0, 256):  # i ranges from 0 to 100
         dt = i/255
         print("DT: ", dt)
-        pwm_pin.write(i)
+        pwm_pin.write(dt)
         print("Iteration: ", i)
-        time.sleep(1)  # small delay
+        time.sleep(0.5)  # small delay
