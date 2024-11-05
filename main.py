@@ -20,6 +20,7 @@ while True:
     time.sleep(0.1)
     led_pin.write(False) 
     time.sleep(0.1)
+    print(board.digital[3].mode)
 
     # for i in range(0, 256):  # i ranges from 0 to 100
     #     # dt = i/255
