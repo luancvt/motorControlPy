@@ -11,9 +11,10 @@ board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 # led_pin = board.get_pin('d:6:o')
 
 # Define the digital pin 3 as pwm
-pwm_pin = board.get_pin('d:3:p') 
+pwm_pin = board.get_pin('d:3:p')
+analog_pin = board.get_pin('a:1:i') 
 
-board.digital[3].enable_reporting()
+board.analog[1].enable_reporting()
 
 while True:
     # # Simple blinking code
@@ -27,5 +28,5 @@ while True:
         print("DT: ", dt)
         pwm_pin.write(dt)
         print("Iteration: ", i)
-        print("TEST: ", board.digital[3].read())
+        print("TEST: ", board.analog[1].read())
         time.sleep(0.5)  # small delay
