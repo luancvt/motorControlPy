@@ -16,14 +16,14 @@ pwm_pin = board.get_pin('d:6:p')
 
 while True:
     # # Simple blinking code
-    # led_pin.write(True)  
-    # time.sleep(0.1)
-    # led_pin.write(False) 
-    # time.sleep(0.1)
+    pwm_pin.write(True)  
+    time.sleep(0.1)
+    pwm_pin.write(False) 
+    time.sleep(0.1)
 
-    for i in range(0, 256):  # i ranges from 0 to 100
-        dt = i/255
-        print("DT: ", dt)
-        pwm_pin.write(False)
-        print("Iteration: ", i)
-        time.sleep(0.5)  # small delay
+    # for i in range(0, 256):  # i ranges from 0 to 100
+    #     dt = i/255
+    #     print("DT: ", dt)
+    #     pwm_pin.write(False)
+    #     print("Iteration: ", i)
+    #     time.sleep(0.5)  # small delay
