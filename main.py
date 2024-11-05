@@ -17,5 +17,5 @@ while True:
     led_pin.write(True)  # Convert to 0.0 - 1.0 range
     time.sleep(0.1)  # Wait for 100 milliseconds
     led_pin.write(False)  # Convert to 0.0 - 1.0 range
-    # time.sleep(0.1)  # Wait for 100 milliseconds
+    time.sleep(0.1)  # Wait for 100 milliseconds
 
