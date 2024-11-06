@@ -28,4 +28,4 @@ while True:
         print("DT: ", dt)
         pwm_pin.write(dt)
         print("Iteration: ", i)
-        time.sleep(0.5)  # small delay
+        time.sleep(0.1)  # small delay
