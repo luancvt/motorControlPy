@@ -19,9 +19,9 @@ board.analog[1].enable_reporting()
 while True:
     # Simple blinking code
     led_pin.write(True)  
-    # time.sleep(0.1)
-    # led_pin.write(False) 
-    # time.sleep(0.1)
+    time.sleep(0.1)
+    led_pin.write(False) 
+    time.sleep(0.1)
 
     # for i in range(0, 256):  # i ranges from 0 to 100
     #     dt = i/255
