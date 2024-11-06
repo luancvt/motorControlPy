@@ -11,7 +11,7 @@ board = Arduino('/dev/ttyACM0')  # Adjust for your operating system
 # led_pin = board.get_pin('d:6:o')
 
 # Define the digital pin 6 as pwm
-pwm_pin = board.get_pin('a:6:p')
+pwm_pin = board.get_pin('d:10:p')
 
 print("CODE INIT")
 
